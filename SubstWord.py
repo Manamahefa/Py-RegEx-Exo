@@ -9,5 +9,4 @@ def subWord(old: str, new: str, text: str) -> str:
         :return: un text modifié
     """
     pattern = r'\b'+old+r'\b'
-    print(pattern)
     return re.sub(pattern, new, text)
