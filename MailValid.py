@@ -8,4 +8,4 @@ def isValidMail(email: str) -> bool:
         :param email: l'addresse e-mail
         :return: True si l'addresse est valid sinon False
     """
-    return mail_pattern.match(email)
+    return bool(mail_pattern.match(email))
