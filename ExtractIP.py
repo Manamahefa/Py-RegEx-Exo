@@ -1,6 +1,5 @@
 import re
 
-#IPv4 et #IPv6
 ip_pattern = re.compile(r"\b\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}\b|\b[\da-f]{2}\.[\da-f]{2}\.[\da-f]{2}\.[\da-f]{2}\.[\da-f]{2}\.[\da-f]{2}\b")
 
 def extractIP(text: str) -> list:
