@@ -1,6 +1,6 @@
 import re
 
-ip_pattern = re.compile(r"\b\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}\b|\b[\da-f]{2}\.[\da-f]{2}\.[\da-f]{2}\.[\da-f]{2}\.[\da-f]{2}\.[\da-f]{2}\b")
+ip_pattern = re.compile(r"\b(?:\d{1,3}\.){3}\d{1,3}\b|\b(?:[0-9a-z]{1,4}:){7}[0-9a-z]{1,4}\b")
 
 def extractIP(text: str) -> list:
     """
